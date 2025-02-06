@@ -1,5 +1,10 @@
 function firstWord(s) {
-  return s[0];
+s = s.trimStart();
+let spaceIndex = s.indexOf(' ');
+if (spaceIndex === -1) {
+	return s;
+}
+return s.substring(0, spaceIndex);
 }
 
 // Do not change the code below
